@@ -1,0 +1,129 @@
+\documentclass{tufte-handout}
+
+\title{"Baby" Report on - Prime Number checking Program}
+
+\author[EF Academy]{Neel Ramani}
+
+%\{28 March 2010} % without \date command, current date is supplied
+
+%\geometry{showframe} % display margins for debugging page layout
+
+\usepackage{graphicx} % allow embedded images
+  \setkeys{Gin}{width=\linewidth,totalheight=\textheight,keepaspectratio}
+  \graphicspath{{graphics/}} % set of paths to search for images
+\usepackage{amsmath}  % extended mathematics
+\usepackage{booktabs} % book-quality tables
+\usepackage{units}    % non-stacked fractions and better unit spacing
+\usepackage{multicol} % multiple column layout facilities
+\usepackage{lipsum}   % filler text
+\usepackage{fancyvrb} % extended verbatim environments
+  \fvset{fontsize=\normalsize}% default font size for fancy-verbatim environments
+  
+  
+  
+    %MADNESS
+  
+  \usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
+\usepackage{fourier} % Use the Adobe Utopia font for the document - comment this line to return to the LaTeX default
+\usepackage[english]{babel} % English language/hyphenation
+\usepackage{amsmath,amsfonts,amsthm} % Math packages
+\usepackage{mathtools}% http://ctan.org/pkg/mathtools
+\usepackage{etoolbox}% http://ctan.org/pkg/etoolbox
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+\usepackage{units}% To use \nicefrac
+\usepackage{cancel}% To use \cancel
+%\usepackage{physymb}%To use r
+\usepackage{sectsty} % Allows customizing section commands
+\usepackage[dvipsnames]{xcolor}
+\usepackage{pgf,tikz}%To draw 
+\usepackage{pgfplots}%To draw 
+\usetikzlibrary{shapes,arrows}%To draw 
+\usetikzlibrary{patterns,fadings}
+ \usetikzlibrary{decorations.pathreplacing}%To draw curly braces 
+ \usetikzlibrary{snakes}%To draw 
+ \usetikzlibrary{spy}%To do zoom-in
+ \usepackage{setspace}%Set margins and such
+ %\usepackage{3dplot}%To draw in 3D
+\usepackage{framed}%To get shade behind text
+
+
+\definecolor{shadecolor}{rgb}{0.3,0.4,0.6}%setting shade color
+\allsectionsfont{\centering \normalfont\scshape} % Make all sections centered, the default font and small caps
+  
+  
+
+  
+  
+
+% Standardize command font styles and environments
+\newcommand{\doccmd}[1]{\texttt{\textbackslash#1}}% command name -- adds backslash automatically
+\newcommand{\docopt}[1]{\ensuremath{\langle}\textrm{\textit{#1}}\ensuremath{\rangle}}% optional command argument
+\newcommand{\docarg}[1]{\textrm{\textit{#1}}}% (required) command argument
+\newcommand{\docenv}[1]{\textsf{#1}}% environment name
+\newcommand{\docpkg}[1]{\texttt{#1}}% package name
+\newcommand{\doccls}[1]{\texttt{#1}}% document class name
+\newcommand{\docclsopt}[1]{\texttt{#1}}% document class option name
+\newenvironment{docspec}{\begin{quote}\noindent}{\end{quote}}% command specification environment
+
+\begin{document}
+
+\maketitle% this prints the handout title, author, and date
+\begin{marginfigure}%
+  \includegraphics[width=\linewidth]{pyt.png}
+  \caption{This is a picture of Python' Symbol.}
+  \label{fig:marginfig}
+\end{marginfigure}
+\begin{abstract}
+\noindent
+In this report I will present my code to check whether a number is prime or composite which is written in Python
+\end{abstract}
+
+\normalsize
+
+%this generates 1cm of vertical space
+\vspace{1cm}
+\section{Software}
+
+This is what you will need for the following code or Program to work
+
+\begin{shaded}
+\begin{verbatim}
+Python 2.7.10 Downloaded and installed
+\end{verbatim}
+\end{shaded}
+
+\vspace{1cm}
+
+\section{Python Code}
+
+\marginnote[40pt]{Enter the number you want to check whether it is prime or not and hit enter.The following code will state whether the number that you have input is Prime or Composite }
+
+\begin{framed}
+\begin{verbatim}
+a=int(input("ENTER A NUMBER  "))
+
+for x in range(2,a)
+    if a%x==0:
+        print "IT IS A COMPOSITE NUMBER"
+        break
+else:
+        print "IT IS A PRIME NUMBER"
+\end{verbatim}
+\end{framed}
+
+\marginnote[40pt]{This will be the output of the program if the number is Composite labled as 1.
+If it is a prime number, the output will be the output labled number 2}
+
+\begin{shaded}
+\begin{verbatim}
+1) IT IS A COMPOSITE NUMBER
+2) IT IS A PRIME NUMBER
+\end{verbatim}
+\end{shaded}
+
+\bibliography{sample-handout}
+\bibliographystyle{plainnat}
+
+
+
+\end{document}
